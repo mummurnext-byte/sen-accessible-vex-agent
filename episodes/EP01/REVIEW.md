@@ -2,9 +2,10 @@
 
 ## Current Gate
 
-- State: `TEXT_REVIEW_REQUIRED`
-- Owner decision: pending
-- Video production: blocked
+- State: `VIDEO_REVIEW_REQUIRED`
+- Owner decision: text approved on 2026-07-20
+- Video production: first editable draft complete
+- ChatCut project: https://app.chatcut.io/editor/8689e921-900a-4964-a8df-3fe8d38436a0
 
 ## Review Checklist for the Project Owner
 
@@ -18,19 +19,22 @@
 
 ## Owner Feedback
 
-Pending.
+The owner approved the EP01 text package and authorized production using a
+stick-figure teacher, English narration, and English/Thai captions. Sen's age
+must not appear in the video.
 
 ## Revision Log
 
 | Date | Revision | Decision |
 | --- | --- | --- |
 | 2026-07-20 | v0.1 initial text draft | Awaiting owner review |
+| 2026-07-20 | v0.2 editable 70-second ChatCut video draft | Awaiting owner video review |
 
 ## Approval
 
-Video work may begin only after the project owner completes this line:
+Text approval record:
 
-`TEXT_APPROVED by __________ on YYYY-MM-DD`
+`TEXT_APPROVED by project owner on 2026-07-20`
 
 Video approval will be recorded later:
 

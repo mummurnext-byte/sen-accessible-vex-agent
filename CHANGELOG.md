@@ -10,3 +10,6 @@
 - Added the complete 48-episode curriculum roadmap.
 - Added reusable episode, accessibility, source, and review specifications.
 - Added the Episode 01 text package for owner review.
+- Recorded owner approval of the Episode 01 text package.
+- Created the first editable 70-second ChatCut video draft with English narration,
+  English/Thai captions, a stick-figure teacher, and the open-research statement.

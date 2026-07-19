@@ -2,10 +2,10 @@
 
 ## Status
 
-- State: `TEXT_REVIEW_REQUIRED`
-- Owner approval: pending
+- State: `VIDEO_REVIEW_REQUIRED`
+- Owner approval: text approved on 2026-07-20
 - Physical test: not started
-- Planned public video duration: 85 seconds
+- Planned public video duration: 70 seconds
 - Spoken language: English
 - Caption languages: English and Thai
 
@@ -72,14 +72,13 @@ Input your logic, spark their world. See you in the next log.
 
 | Time | Visual | Narration purpose | Accessibility cue |
 | --- | --- | --- | --- |
-| 00:00-00:05 | No speech for the first two seconds. Close-up of the Check button, then the screen changes from `PRESS CHECK` to `GO`; robot begins moving. Title: `INPUT -> BRAIN -> OUTPUT`. | Silent hook and result preview | Three labeled boxes and arrows; no meaning depends on sound |
-| 00:05-00:13 | Sen digital host beside three large cards: finger icon `INPUT`, Brain icon `BRAIN`, wheel/screen icon `OUTPUT`. | Introduce the model | Stable cards remain visible while each term is spoken |
-| 00:13-00:25 | Full-screen VEXcode Blocks stack. Highlight `wait until <Brain Check button pressed?>`. | Connect button to input | Yellow outline and number `1`; caption placed above lower safe zone |
-| 00:25-00:39 | Highlight the blocks from top to bottom: `PRESS CHECK`, wait, `GO`, drive 300 mm, `DONE`. | Explain Brain execution order | Moving highlight advances one block at a time; arrows stay fixed |
-| 00:39-00:55 | Split view: left shows finger pressing Check; center shows highlighted block; right shows robot driving to the 300 mm tape line. | Prove input-to-output behavior | Labels `INPUT`, `BRAIN`, `OUTPUT` stay over the three views |
-| 00:55-01:05 | Brain screen close-up changes to `DONE`; then freeze frame of target line. | Confirm final output | Word plus check icon, not color alone |
-| 01:05-01:15 | Two parameter cards, `300 mm` and `500 mm`; learner sees a large question mark over the output card. | Visual prediction check | Five-second pause gives reading and response time |
-| 01:15-01:25 | Sen digital host; GitHub repository card with `EP01`, teacher deck, worksheet, and Blocks project icons. | Open-source call to action | Download items are shown as labeled icons; complete sign-off remains on screen |
+| 00:00-00:05 | No speech for the first two seconds. Title and `INPUT -> BRAIN -> OUTPUT` appear as a silent hook. | Silent hook and result preview | Three labeled boxes and arrows; no meaning depends on sound |
+| 00:05-00:12 | Stick-figure teacher beside `INPUT`, `BRAIN`, and `OUTPUT` definitions. | Introduce the model | Stable labels remain visible while each term is spoken |
+| 00:12-00:23 | Brain Check button and its matching wait block. | Connect the button to input | Blue button and block are linked with a fixed arrow |
+| 00:23-00:40 | Recreated VEXcode Blocks stack highlighted from top to bottom. | Explain Brain execution order | Yellow outline advances one numbered block at a time |
+| 00:40-00:50 | Clearly labeled `SIMULATION` of a robot driving to the 300 mm line. | Prove input-to-output behavior | `INPUT`, `BRAIN`, and `OUTPUT` labels remain visible |
+| 00:50-00:59 | Parameter cards change from `300 mm` to `500 mm`. | Visual prediction check | Input and output changes are labeled with text, not color alone |
+| 00:59-01:10 | Stick-figure teacher, lesson-material cards, creator credit, and open-research statement. | Open-source call to action | Full English/Thai sign-off remains above the platform overlay zone |
 
 ### On-Screen Title and Cover
 
@@ -397,4 +396,5 @@ Automation must not be enabled until the downloadable repository link exists and
 ## Revision Notes
 
 - v0.1: Initial text package prepared for owner review.
-- Video production is blocked until explicit `TEXT_APPROVED` is recorded.
+- v0.2: Text approved; 70-second editable ChatCut video draft created with a stick-figure teacher and bilingual captions.
+- Video publication remains blocked until explicit `VIDEO_APPROVED` is recorded.
