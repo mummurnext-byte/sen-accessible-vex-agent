@@ -7,3 +7,6 @@
 - Added sequential text and video approval gates.
 - Added English narration and English/Thai learning-material requirements.
 - Added dual licensing for code and educational content.
+- Added the complete 48-episode curriculum roadmap.
+- Added reusable episode, accessibility, source, and review specifications.
+- Added the Episode 01 text package for owner review.
