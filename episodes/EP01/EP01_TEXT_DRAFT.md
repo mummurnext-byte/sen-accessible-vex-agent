@@ -397,4 +397,5 @@ Automation must not be enabled until the downloadable repository link exists and
 
 - v0.1: Initial text package prepared for owner review.
 - v0.2: Text approved; 70-second editable ChatCut video draft created with a stick-figure teacher and bilingual captions.
+- v0.3: Added an independent Manim version with full stick-figure animation, Thai-primary captions, English narration, and an original technology music bed.
 - Video publication remains blocked until explicit `VIDEO_APPROVED` is recorded.

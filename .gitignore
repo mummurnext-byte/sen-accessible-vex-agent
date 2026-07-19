@@ -4,7 +4,11 @@
 .DS_Store
 Thumbs.db
 node_modules/
+.venv/
 dist/
 tmp/
 exports/
+episodes/*/manim/media*/
+episodes/*/manim/build/
+__pycache__/
 *.log

@@ -13,3 +13,6 @@
 - Recorded owner approval of the Episode 01 text package.
 - Created the first editable 70-second ChatCut video draft with English narration,
   English/Thai captions, a stick-figure teacher, and the open-research statement.
+- Added a reproducible Manim production pipeline for the Episode 01 alternate cut.
+- Rendered a 70-second full stick-figure version with Thai-primary captions,
+  gentle English narration, and an original locally generated technology music bed.
