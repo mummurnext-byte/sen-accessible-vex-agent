@@ -16,3 +16,5 @@
 - Added a reproducible Manim production pipeline for the Episode 01 alternate cut.
 - Rendered a 70-second full stick-figure version with Thai-primary captions,
   gentle English narration, and an original locally generated technology music bed.
+- Added a 70-second 9:16 reference-style cut with a soft white background,
+  black stick-figure animation, focus glows, particles, and button ripple effects.

@@ -39,3 +39,19 @@ exports/Silent_Sparks_EP01_Manim_Version_C.mp4
 
 The English narration uses a gentle male neural voice. The background music is
 generated locally from synthesized tones and does not contain third-party audio.
+
+## Reference-Style Vertical Cut
+
+`ep01_reference_style.py` recreates the supplied visual direction as a vertical
+lesson: soft white background, expressive black stick figure, sequential focus
+glows, particles, concentric button rings, and larger Thai-first captions.
+
+```powershell
+powershell -NoProfile -ExecutionPolicy Bypass -File .\episodes\EP01\manim\render_ep01_reference.ps1
+```
+
+The alternate review file is written to:
+
+```text
+exports/Silent_Sparks_EP01_Reference_Style_Version_D.mp4
+```
