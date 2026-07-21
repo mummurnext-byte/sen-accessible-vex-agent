@@ -12,13 +12,13 @@ from scipy.io import wavfile
 VOICE = "en-US-BrianMultilingualNeural"
 
 
-async def make_voice(text_path: Path, output_path: Path) -> None:
+async def make_voice(text_path: Path, output_path: Path, rate: str) -> None:
     text = text_path.read_text(encoding="utf-8").strip()
     output_path.parent.mkdir(parents=True, exist_ok=True)
     communicate = edge_tts.Communicate(
         text=text,
         voice=VOICE,
-        rate="-25%",
+        rate=rate,
         pitch="+2Hz",
         volume="+0%",
     )
@@ -71,9 +71,11 @@ def main() -> None:
     parser.add_argument("--text", type=Path, required=True)
     parser.add_argument("--voice", type=Path, required=True)
     parser.add_argument("--music", type=Path, required=True)
+    parser.add_argument("--rate", default="-25%")
+    parser.add_argument("--duration", type=float, default=70.0)
     args = parser.parse_args()
-    asyncio.run(make_voice(args.text, args.voice))
-    make_music(args.music)
+    asyncio.run(make_voice(args.text, args.voice, args.rate))
+    make_music(args.music, duration=args.duration)
 
 
 if __name__ == "__main__":

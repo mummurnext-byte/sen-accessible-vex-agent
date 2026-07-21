@@ -22,3 +22,5 @@
   packs after text approval; direct video rendering now requires an explicit request.
 - Added the Episode 01 Seedance prompt pack with seven vertical animation clips,
   English narration lines, and Thai/English overlay instructions.
+- Added the Episode 01 duck-host cut using the approved graduate-duck prototype,
+  slower English narration, a 96-second timeline, and upload-ready audio/video encoding.

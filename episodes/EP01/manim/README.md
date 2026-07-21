@@ -55,3 +55,21 @@ The alternate review file is written to:
 ```text
 exports/Silent_Sparks_EP01_Reference_Style_Version_D.mp4
 ```
+
+## Duck-Host Vertical Cut
+
+`ep01_duck_host.py` replaces the stick-figure teacher with the approved
+graduate-duck character poses in `episodes/EP01/assets/duck_poses/`. The host
+uses pose changes rather than lip synchronization.
+
+```powershell
+powershell -NoProfile -ExecutionPolicy Bypass -File .\episodes\EP01\manim\render_ep01_duck.ps1
+```
+
+The render uses slower English narration, a 96-second timeline, loudness
+normalization, and high-quality H.264 encoding for social-platform upload. The
+review file is written to:
+
+```text
+exports/Silent_Sparks_EP01_Duck_Host_Version_E.mp4
+```

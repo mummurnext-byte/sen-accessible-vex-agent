@@ -8,6 +8,7 @@
 - ChatCut project: https://app.chatcut.io/editor/8689e921-900a-4964-a8df-3fe8d38436a0
 - Manim alternate: `exports/Silent_Sparks_EP01_Manim_Version_C.mp4`
 - Reference-style alternate: `exports/Silent_Sparks_EP01_Reference_Style_Version_D.mp4`
+- Duck-host alternate: `exports/Silent_Sparks_EP01_Duck_Host_Version_E.mp4`
 
 ## Review Checklist for the Project Owner
 
@@ -33,6 +34,7 @@ must not appear in the video.
 | 2026-07-20 | v0.2 editable 70-second ChatCut video draft | Awaiting owner video review |
 | 2026-07-20 | v0.3 Manim full stick-figure animation | Awaiting owner video review |
 | 2026-07-20 | v0.4 vertical reference-style Manim animation | Awaiting owner video review |
+| 2026-07-21 | v0.5 duck-host animation with slower narration | Awaiting owner video review |
 
 ## Approval
 
