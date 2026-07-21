@@ -18,3 +18,7 @@
   gentle English narration, and an original locally generated technology music bed.
 - Added a 70-second 9:16 reference-style cut with a soft white background,
   black stick-figure animation, focus glows, particles, and button ripple effects.
+- Changed the default production handoff to owner-operated Seedance prompt
+  packs after text approval; direct video rendering now requires an explicit request.
+- Added the Episode 01 Seedance prompt pack with seven vertical animation clips,
+  English narration lines, and Thai/English overlay instructions.
