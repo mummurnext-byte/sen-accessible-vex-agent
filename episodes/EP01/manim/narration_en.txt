@@ -1,0 +1,11 @@
+Every robot program follows one visible pattern: input, Brain, output.
+
+The Check button is our input. It tells the robot that something happened.
+
+The Brain follows the Blocks from top to bottom. First, it displays PRESS CHECK. Then it waits for the button. When the input becomes true, the screen changes to GO.
+
+Now watch the output. The drivetrain moves forward and stops at three hundred millimeters. When the movement finishes, the final output is DONE.
+
+Your turn to predict. If we change three hundred to five hundred millimeters, the Brain still follows the same order, but the driving distance changes.
+
+Download the open-source teacher guide, worksheet, and VEXcode Blocks project below. Input your logic, spark their world. See you in the next log.

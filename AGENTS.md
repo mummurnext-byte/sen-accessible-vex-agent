@@ -34,6 +34,9 @@ Progress updates must be concise and task-relevant. Include only necessary assum
 - Code license: MIT.
 - Educational content license: CC BY-NC-SA 4.0.
 - Deployment: no Vercel deployment is required.
+- Video production handoff: after text approval, Codex prepares a Seedance
+  prompt pack for the project owner to generate and review. Codex does not
+  render the episode video unless the owner explicitly requests it.
 
 ## Content Identity
 
@@ -64,7 +67,9 @@ Hard gates:
 
 - Generate the complete text package first.
 - Stop at `TEXT_REVIEW_REQUIRED` and wait for the project owner's explicit approval.
-- Never generate or edit the episode video before `TEXT_APPROVED`.
+- Never prepare video prompts or generate video before `TEXT_APPROVED`.
+- After `TEXT_APPROVED`, prepare reusable Seedance prompts, narration, and
+  caption-overlay instructions as the default video handoff.
 - After a video draft, stop at `VIDEO_REVIEW_REQUIRED`.
 - Do not start the next episode until the project owner explicitly requests it.
 
