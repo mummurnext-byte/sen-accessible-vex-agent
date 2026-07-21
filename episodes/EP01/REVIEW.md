@@ -9,6 +9,7 @@
 - Manim alternate: `exports/Silent_Sparks_EP01_Manim_Version_C.mp4`
 - Reference-style alternate: `exports/Silent_Sparks_EP01_Reference_Style_Version_D.mp4`
 - Duck-host alternate: `exports/Silent_Sparks_EP01_Duck_Host_Version_E.mp4`
+- Standard-speed duck-host review cut: `exports/Silent_Sparks_EP01_Duck_Host_Version_F_Standard_Speed.mp4`
 
 ## Review Checklist for the Project Owner
 
@@ -35,6 +36,7 @@ must not appear in the video.
 | 2026-07-20 | v0.3 Manim full stick-figure animation | Awaiting owner video review |
 | 2026-07-20 | v0.4 vertical reference-style Manim animation | Awaiting owner video review |
 | 2026-07-21 | v0.5 duck-host animation with slower narration | Awaiting owner video review |
+| 2026-07-21 | v0.6 duck-host animation with standard narration speed | Awaiting owner video review |
 
 ## Approval
 

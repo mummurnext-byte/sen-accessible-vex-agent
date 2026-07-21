@@ -66,10 +66,10 @@ uses pose changes rather than lip synchronization.
 powershell -NoProfile -ExecutionPolicy Bypass -File .\episodes\EP01\manim\render_ep01_duck.ps1
 ```
 
-The render uses slower English narration, a 96-second timeline, loudness
-normalization, and high-quality H.264 encoding for social-platform upload. The
-review file is written to:
+The current render uses standard-speed English narration, a 60-second timeline,
+loudness normalization, and high-quality H.264 encoding for social-platform
+upload. The review file is written to:
 
 ```text
-exports/Silent_Sparks_EP01_Duck_Host_Version_E.mp4
+exports/Silent_Sparks_EP01_Duck_Host_Version_F_Standard_Speed.mp4
 ```

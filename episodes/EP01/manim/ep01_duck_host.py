@@ -128,7 +128,7 @@ class SilentSparksDuckHost(Scene):
         )
         group = Group(teacher, shadow, boxes, arrows, title, caption)
         self.add(group)
-        self.wait(3)
+        self.wait(2)
         for index, color in enumerate((INPUT, BRAIN, OUTPUT)):
             dots = self.particles(boxes[index][1].get_center(), color)
             self.play(
@@ -137,7 +137,7 @@ class SilentSparksDuckHost(Scene):
                 run_time=0.65,
             )
             self.play(FadeOut(dots), run_time=0.15)
-        self.wait(2.6)
+        self.wait(0.6)
         return group
 
     def input_scene(self, previous: VGroup) -> VGroup:
@@ -164,7 +164,8 @@ class SilentSparksDuckHost(Scene):
         group = Group(title, teacher, shadow, brain_body, brain_screen, check, check_label, rings, block, wire, caption)
         self.play(FadeIn(title), FadeIn(teacher, shift=RIGHT * 0.5), FadeIn(shadow), FadeIn(brain_body), FadeIn(brain_screen), FadeIn(caption), run_time=1.4)
         point_pose = self.duck("pointing", 3.35).move_to([-2.25, 0.0, 0])
-        self.play(Transform(teacher, point_pose), shadow.animate.move_to([-2.1, -1.35, 0]), run_time=1.2)
+        self.play(FadeOut(teacher), FadeIn(point_pose), shadow.animate.move_to([-2.1, -1.35, 0]), run_time=1.2)
+        group.remove(teacher).add(point_pose)
         self.play(FadeIn(check, scale=0.4), FadeIn(check_label, scale=0.4), LaggedStart(*[Create(ring) for ring in rings], lag_ratio=0.12), run_time=1.4)
         self.play(Indicate(check, color=INPUT, scale_factor=1.18), *[ring.animate.scale(1.22).set_opacity(0.12) for ring in rings], run_time=1.4)
         self.play(Create(wire), FadeIn(block, shift=LEFT * 0.4), run_time=1.1)
@@ -172,7 +173,7 @@ class SilentSparksDuckHost(Scene):
         self.add(packet)
         self.play(MoveAlongPath(packet, wire), Flash(block, color=INPUT, flash_radius=1.5), run_time=1.4)
         self.remove(packet)
-        self.wait(6.0)
+        self.wait(0.5)
         return group
 
     def brain_scene(self, previous: VGroup) -> VGroup:
@@ -209,7 +210,7 @@ class SilentSparksDuckHost(Scene):
         self.add(signal)
         self.play(MoveAlongPath(signal, signal_path), run_time=1.0)
         self.remove(signal)
-        self.wait(8.2)
+        self.wait(1.2)
         return group
 
     def simulation_scene(self, previous: VGroup) -> VGroup:
@@ -243,7 +244,7 @@ class SilentSparksDuckHost(Scene):
         done = Text("DONE", font="Arial", font_size=38, weight=BOLD, color=OUTPUT).move_to([2.7, 2.2, 0])
         waves = VGroup(*[Circle(0.38 + i * 0.18, color=OUTPUT, stroke_width=5).set_opacity(0.44 - i * 0.08) for i in range(4)]).move_to(done)
         self.play(FadeIn(done, scale=0.4), LaggedStart(*[Create(w) for w in waves], lag_ratio=0.12), Flash(target, color=OUTPUT), run_time=1.5)
-        self.wait(7.7)
+        self.wait(1.0)
         return Group(group, ripples, done, waves)
 
     def prediction_scene(self, previous: VGroup) -> VGroup:
@@ -273,13 +274,13 @@ class SilentSparksDuckHost(Scene):
         self.play(Create(lane), Create(marker_300), FadeIn(robot, shift=LEFT * 0.3), run_time=1.0)
         self.play(Create(marker_500), robot.animate.move_to([3.1, 0.95, 0]), run_time=1.5, rate_func=smooth)
         self.play(FadeIn(option_a, shift=LEFT * 0.3), FadeIn(option_b, shift=LEFT * 0.3), FadeIn(no, scale=0.4), FadeIn(yes, scale=0.4), run_time=1.5)
-        self.wait(6.0)
+        self.wait(1.0)
         return group
 
     def repository_scene(self, previous: VGroup) -> None:
         self.play(FadeOut(previous), run_time=0.8)
-        teacher = self.duck("bowing", 2.65).move_to([-3.25, 2.2, 0])
-        shadow = self.floor_shadow(1.2).move_to([-3.35, 1.0, 0])
+        teacher = self.duck("bowing", 2.65).move_to([-3.25, -2.75, 0])
+        shadow = self.floor_shadow(1.2).move_to([-3.25, -4.0, 0])
         title = Text("OPEN-SOURCE LESSON PACKAGE", font="Arial", font_size=34, weight=BOLD, color=BLACK)
         title.scale_to_fit_width(7.5).move_to([0, 5.2, 0])
         caption = self.caption(
@@ -314,5 +315,5 @@ class SilentSparksDuckHost(Scene):
         point_pose = self.duck("pointing", 2.35).move_to([-3.05, -2.75, 0])
         down = Arrow([-2.05, -3.0, 0], [-2.05, -4.0, 0], color=INPUT, stroke_width=7)
         rings = VGroup(*[Circle(0.28 + i * 0.16, color=INPUT, stroke_width=4).set_opacity(0.46 - i * 0.08) for i in range(4)]).move_to(down.get_end())
-        self.play(Transform(teacher, point_pose), shadow.animate.move_to([-3.15, -3.7, 0]), GrowArrow(down), LaggedStart(*[Create(r) for r in rings], lag_ratio=0.12), run_time=1.2)
-        self.wait(10.2)
+        self.play(FadeOut(teacher), FadeIn(point_pose), shadow.animate.move_to([-3.15, -3.7, 0]), GrowArrow(down), LaggedStart(*[Create(r) for r in rings], lag_ratio=0.12), run_time=1.2)
+        self.wait(1.3)

@@ -400,4 +400,5 @@ Automation must not be enabled until the downloadable repository link exists and
 - v0.3: Added an independent Manim version with full stick-figure animation, Thai-primary captions, English narration, and an original technology music bed.
 - v0.4: Added a 9:16 reference-style Manim cut with a soft white background, black stick-figure motion, focus glows, particles, and button ripple animation.
 - v0.5: Replaced the stick figure with the approved graduate-duck prototype, slowed the English narration, extended the runtime to 96 seconds, and normalized audio for social-video playback.
+- v0.6: Restored standard English narration speed, reduced the runtime to 60 seconds, and cleaned up character pose transitions and the closing layout.
 - Video publication remains blocked until explicit `VIDEO_APPROVED` is recorded.

@@ -7,10 +7,10 @@ $ffmpeg = "C:\Users\User\AppData\Local\Temp\mummur-voice-tools\node_modules\.pnp
 $build = Join-Path $PSScriptRoot "build"
 $media = Join-Path $PSScriptRoot "media-duck"
 $exports = Join-Path $repoRoot "exports"
-$narration = Join-Path $build "narration-duck.mp3"
-$music = Join-Path $build "technology-bed-duck.wav"
+$narration = Join-Path $build "narration-duck-standard.mp3"
+$music = Join-Path $build "technology-bed-duck-standard.wav"
 $silentVideo = Join-Path $media "videos\ep01_duck_host\1920p30\SilentSparksDuckHost.mp4"
-$output = Join-Path $exports "Silent_Sparks_EP01_Duck_Host_Version_E.mp4"
+$output = Join-Path $exports "Silent_Sparks_EP01_Duck_Host_Version_F_Standard_Speed.mp4"
 
 New-Item -ItemType Directory -Force $build, $media, $exports | Out-Null
 $env:PATH = "$(Split-Path $ffmpeg);$env:PATH"
@@ -20,8 +20,8 @@ if (!(Test-Path $narration) -or !(Test-Path $music)) {
         --text (Join-Path $PSScriptRoot "narration_en.txt") `
         --voice $narration `
         --music $music `
-        --rate=-45% `
-        --duration 96.1
+        --rate=+0% `
+        --duration 60.1
     if ($LASTEXITCODE -ne 0) { throw "Audio generation failed with exit code $LASTEXITCODE." }
 }
 
